@@ -96,6 +96,16 @@ ex_data  = data.frame(x = 1:10,
                       y = 10:1 + rnorm(n = 10))
 ex_model = lm(y ~ x, data = ex_data)
 
+
+lev_ex = data.frame(
+  x1 = c(0, 11, 11, 7, 4, 10, 5, 8),
+  x2 = c(1, 5, 4, 3, 1, 4, 4, 2),
+  y  = c(11, 15, 13, 14, 0, 19, 16, 8))
+
+plot(x2 ~ x1, data = lev_ex, cex = 2)
+points(7, 3, pch = 20, col = "red", cex = 2)
+
+
 # low leverage, large residual, small influence
 point_1 = c(5.4, 11)
 ex_data_1 = rbind(ex_data, point_1)
