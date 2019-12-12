@@ -1,0 +1,46 @@
+#Charlie Angevine
+
+#Data Science Final presentation
+
+library(ggplot2)
+
+#read in the relevant data, then take only the data from 1999-current rather than 1984.
+#data from 1984-1998 was consistently incomplete
+
+db_chop <- read.csv("Angevine_006130173.csv", header=TRUE)
+db <- db_chop[!(db_chop$Year < 1998),]
+
+#rename a few confusing column names
+colnames(db)[12] <- "City.MPG"
+colnames(db)[13] <- "Highway.MPG"
+colnames(db)[14] <- "Combined.MPG"
+
+#mpg based on displacement with color on year
+lm_disp <- ggplot(data = db) +
+  geom_jitter(mapping = aes(x = Engine.Displacement, y = Combined.MPG)) +
+  geom_smooth(method = lm,aes(x=Engine.Displacement,y=Combined.MPG)) +
+  labs(x = "Engine Displacement", y = "Average MPG", title = "Average MPG of Cars by Engine Displacement")
+lm_disp
+
+#mpg over years with color on displacement
+lm_disp2 <- ggplot(data = db) +
+  geom_jitter(mapping = aes(x = Year, y = Combined.MPG, color = Engine.Displacement)) +
+  geom_smooth(method = lm,aes(x=Year,y=Combined.MPG)) +
+  labs(x = "Year", y = "Average MPG", title = "Fuel Economy Over Time")
+lm_disp2
+
+#New data frame to make small multiples visualization, taking 10 specific vehicle classes
+dbs <- db[,c(2,5,9,12,13,14)]
+veh_classes <- c('Vans, Passenger Type', 'Minivan - 4WD', 'Standard Pickup Trucks 4WD', 'Midsize Station Wagons',
+                 'Two Seaters', 'Subcompact Cars', 'Compact Cars', 'Midsize Cars', 'Large Cars')
+dbs2 <- dbs[dbs$Class %in% veh_classes,]
+
+#small multiples visualization on smaller dataframe
+sml <- ggplot(data = dbs2) +
+  geom_jitter(mapping = aes(x = Year, y = Combined.MPG)) +
+  geom_smooth(method = lm,aes(x = Year, y = Combined.MPG)) +
+  facet_wrap(~ Class)
+sml
+
+model <- lm(Combined.MPG ~ Year + Engine.Displacement, data=dbs)
+summary(model)
