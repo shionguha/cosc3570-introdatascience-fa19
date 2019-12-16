@@ -1,0 +1,31 @@
+LAYER SALARIES,,,,,,,
+RANK,NAME,TEAM,POS, SALARY ,YEARS, TOTAL VALUE , AVG ANNUAL 
+1,Max Scherzer,WSH,SP,4.21429e+07,7 (2015-21),2.1e+08,3e+07
+2,Stephen Strasburg,WSH,SP,3.64286e+07,7 (2017-23),1.75e+08,2.5e+07
+3,Mike Trout,LAA,CF,3.40833e+07,6 (2015-20),1.445e+08,2.40833e+07
+4,Zack Greinke,ARI,SP,3.24219e+07,6 (2016-21),2.065e+08,3.44167e+07
+5,Clayton Kershaw,LAD,SP,3.1e+07,3 (2019-21),9.3e+07,3.1e+07
+5,David Price,BOS,SP,3.1e+07,7 (2016-22),2.17e+08,3.1e+07
+7,Miguel Cabrera,DET,DH,3e+07,10 (2014-23),2.92e+08,2.92e+07
+8,Yoenis Cespedes,NYM,OF,2.9e+07,4 (2017-20),1.1e+08,2.75e+07
+9,Albert Pujols,LAA,DH,2.8e+07,10 (2012-21),2.4e+08,2.4e+07
+9,Justin Verlander,HOU,SP,2.8e+07,7 (2013-19),1.8e+08,2.57143e+07
+11,Felix Hernandez,SEA,SP,2.78571e+07,7 (2013-19),1.75e+08,2.5e+07
+12,Jon Lester,CHC,SP,2.75e+07,6 (2015-20),1.55e+08,2.58333e+07
+13,Nolan Arenado,COL,3B,2.6e+07,1 (2019),2.6e+07,2.6e+07
+13,Giancarlo Stanton,NYY,RF,2.6e+07,13 (2015-27),3.25e+08,2.5e+07
+15,Joey Votto,CIN,1B,2.5e+07,10 (2014-23),2.25e+08,2.25e+07
+15,Jake Arrieta,PHI,SP,2.5e+07,3 (2018-20),7.5e+07,2.5e+07
+15,Jordan Zimmermann,DET,SP,2.5e+07,5 (2016-20),1.1e+08,2.2e+07
+18,Robinson Cano,NYM,2B,2.4e+07,10 (2014-23),2.4e+08,2.4e+07
+19,J.D. Martinez,BOS,OF,2.375e+07,5 (2018-22),1.1e+08,2.2e+07
+20,Edwin Encarnacion,SEA,1B,2.33333e+07,3 (2017-19),6e+07,2e+07
+21,Josh Donaldson,ATL,3B,2.3e+07,1 (2019),2.3e+07,2.3e+07
+22,Johnny Cueto,SF,SP,2.26667e+07,6 (2016-21),1.3e+08,2.16667e+07
+23,Buster Posey,SF,C,2.25111e+07,9 (2013-21),1.67e+08,1.85556e+07
+24,Masahiro Tanaka,NYY,SP,2.2e+07,7 (2014-20),1.55e+08,2.21429e+07
+25,Jacoby Ellsbury,NYY,OF,2.18571e+07,7 (2014-20),1.53e+08,2.18571e+07
+26,Eric Hosmer,SD,1B,2.1625e+07,8 (2018-25),1.44e+08,1.8e+07
+27,Charlie Blackmon,COL,CF,2.15167e+07,6 (2018-23),1.08e+08,1.8e+07
+28,Matt Kemp,CIN,OF,2.15e+07,8 (2012-19),1.6e+08,2e+07
+29,Freddie Freeman,ATL,1B,2.13594e+07,8 (2014-21),1.35e+08,1.6875e+07
